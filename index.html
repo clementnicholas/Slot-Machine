@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html lang="en" class="ie7 "><![endif]
+<!--[if IE 8]><html lang="en" class="ie8 "><![endif]
+<!--[if IE 9]><html lang="en" class="ie9 "><![endif]
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class>
+  <!--<![endif]-->
+  <head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Play the Slots! Win Caffeine!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Caffeine Slots!</title>
+    <style>
+      @font-face {font-family: "FoxGrotesqueW03-BoldItalic";
+        src: url("fox.eot"); /* IE9*/
+        src: url("fox.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("css/fox.woff") format("woff"), /* chrome、firefox */
+        url("css/fox.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        url("css/fox.svg#FoxGrotesqueW03-BoldItalic") format("svg"); /* iOS 4.1- */
+      }
+    </style>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  
+  </head>
+  <body>
+    <div id="main-container">  
+      <div id="header-left">
+        <h1>What's A For Loop? Time to Visit...</h1>
+      </div>
+      <div id="machine-body">
+        <h2>Thumbtack's Caffeine Machine!</h2>
+        <div id="slot-display">
+          <div class="reel" id="reel-1">
+            <ul>
+              <li class="coffee"><img class="coffee" src="img/coffee-maker.png" alt="coffee maker"></li>
+              <li class="tea"><img class="tea" src="img/teapot.png" alt="teapot"></li>
+              <li class="espresso"><img class="espresso" src="img/espresso-machine.png" alt="teapot"></li>
+              <li class="coffee"><img class="coffee" src="img/coffee-maker.png" alt="coffee maker"></li>
+              <li class="tea"><img class="tea" src="img/teapot.png" alt="teapot"></li>
+              <li class="espresso"><img class="espresso" src="img/espresso-machine.png" alt="teapot"></li>
+              <li class="coffee"><img class="coffee" src="img/coffee-maker.png" alt="coffee maker"></li>
+              <li class="tea"><img class="tea" src="img/teapot.png" alt="teapot"></li>
+              <li class="espresso"><img class="espresso" src="img/espresso-machine.png" alt="teapot"></li>
+              <li class="coffee"><img class="coffee" src="img/coffee-maker.png" alt="coffee maker"></li>
+              <li class="tea"><img class="tea" src="img/teapot.png" alt="teapot"></li>
+              <li class="espresso"><img class="espresso" src="img/espresso-machine.png" alt="teapot"></li>
+            </ul>
+          </div>
+          <div class="reel" id="reel-2">
+            <ul>
+              <li class="coffee"><img class="coffee" src="img/coffee-filter.png" alt="coffee filter"></li>
+              <li class="tea"><img class="tea" src="img/tea-strainer.png" alt="tea strainer"></li>
+              <li class="espresso"><img class="espresso" src="img/espresso-tamper.png" alt="espresso tamper"></li>
+              <li class="coffee"><img class="coffee" src="img/coffee-filter.png" alt="coffee filter"></li>
+              <li class="tea"><img class="tea" src="img/tea-strainer.png" alt="tea strainer"></li>
+              <li class="espresso"><img class="espresso" src="img/espresso-tamper.png" alt="espresso tamper"></li>
+              <li class="coffee"><img class="coffee" src="img/coffee-filter.png" alt="coffee filter"></li>
+              <li class="tea"><img class="tea" src="img/tea-strainer.png" alt="tea strainer"></li>
+              <li class="espresso"><img class="espresso" src="img/espresso-tamper.png" alt="espresso tamper"></li>
+              <li class="coffee"><img class="coffee" src="img/coffee-filter.png" alt="coffee filter"></li>
+              <li class="tea"><img class="tea" src="img/tea-strainer.png" alt="tea strainer"></li>
+              <li class="espresso"><img class="espresso" src="img/espresso-tamper.png" alt="espresso tamper"></li>
+            </ul>
+          </div>
+          <div class="reel" id="reel-3">
+            <ul>
+              <li class="coffee"><img class="coffee" src="img/coffee-bag.png" alt="ground coffee"></li>
+              <li class="tea"><img class="tea" src="img/loose-tea.png" alt="loose tea"></li>
+              <li class="espresso"><img class="espresso" src="img/espresso-beans.png" alt="ground espresso"></li>
+              <li class="coffee"><img class="coffee" src="img/coffee-bag.png" alt="ground coffee"></li>
+              <li class="tea"><img class="tea" src="img/loose-tea.png" alt="loose tea"></li>
+              <li class="espresso"><img class="espresso" src="img/espresso-beans.png" alt="ground espresso"></li>
+              <li class="coffee"><img class="coffee" src="img/coffee-bag.png" alt="ground coffee"></li>
+              <li class="tea"><img class="tea" src="img/loose-tea.png" alt="loose tea"></li>
+              <li class="espresso"><img class="espresso" src="img/espresso-beans.png" alt="ground espresso"></li>
+              <li class="coffee"><img class="coffee" src="img/coffee-bag.png" alt="ground coffee"></li>
+              <li class="tea"><img class="tea" src="img/loose-tea.png" alt="loose tea"></li>
+              <li class="espresso"><img class="espresso" src="img/espresso-beans.png" alt="ground espresso"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="light" id="light-1"></div>
+        <div class="light" id="light-2"></div>
+        <div class="light" id="light-3"></div>
+      </div>
+      <div id="machine-arm">
+        <div id="arm-connect"></div>
+        <div id="vertical-arm"></div>
+        <div id="arm-handle"><img src="img/coffeecup.png" alt="coffee cup"></div>
+      </div>
+      <div id="result-div">
+        <h3></h3>
+        <h5></h5>
+        <p>Click the Coffee Cup to Try Your Luck!</p>
+      </div>    
+      <div id="dispenser">
+        <div id="dispenser-arm">
+          <div id="arm-liquid"></div>
+        </div>
+        <div id="dispenser-spout">
+          <div id="spout-liquid"></div>
+        </div>
+        <div id="dispenser-cup">
+          <svg>
+            <linearGradient id="lg" x1="0.5" y1="1" x2="0.5" y2="0">
+              <stop id="stop-1" offset="0%" stop-opacity="1" stop-color="#4E2F07">
+                <animate id="animate-coffee" attributeName="offset" values="0;1" repeatCount="1" dur="2s" begin="indefinite" fill="freeze"/>
+              </stop>
+              <stop id="stop-2" offset="100%" stop-opacity="0" stop-color="#4E2F07">
+                <animate id="fill-cup" attributeName="offset" values="0;1" repeatCount="1" dur="2s" begin="indefinite" fill="freeze"/>
+              </stop>
+            </linearGradient>
+            <g fill="none" stroke="#2c3e50" stroke-width="5">
+              <path d="M188.577,86.409c0-10.8-2.922-22.243-24.589-25.236c-0.636-0.087-1.263-0.083-1.872-0.015
+  c0.564-7.447,0.438-12.401,0.414-13.126c-0.132-4.045-3.504-7.256-7.551-7.256H7.501c-2.508,0-4.85,1.254-6.24,3.34
+  c-0.96,1.439-1.379,3.144-1.23,4.822c-0.165,7.133-0.142,53.169,26.168,83.863H7.5c-4.143,0-7.5,3.357-7.5,7.5s3.357,7.5,7.5,7.5
+  h38.204h71.182h38.167c4.143,0,7.5-3.357,7.5-7.5s-3.357-7.5-7.5-7.5h-18.785c1.535-1.803,2.981-3.659,4.343-5.56
+  C165.036,124.709,188.577,100.351,188.577,86.409z"></path>
+            </g>
+            <g fill="none" stroke="#2c3e50" stroke-width="5">
+              <path d="M160.392,75.646c0.49,0.179,1.006,0.311,1.544,0.386
+  c11.642,1.607,11.642,4.538,11.642,10.369c-0.13,4.143-10.107,16.14-22.59,22.308C155.915,97.313,158.759,85.662,160.392,75.646z"></path>
+            </g>
+            <g id="inner-cup" fill="none" stroke="#2c3e50" stroke-width="5">
+              <path d="M48.076,132.801c-28.083-20.536-32.43-60.699-33-77.025h132.316c-0.82,16.514-5.665,56.998-32.939,77.025H48.076z"></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div> 
+
+    <div id="credits">
+      <h6>Credits:</h6>
+      <ul>
+        <li><a href="http://www.onlinewebfonts.com">oNline Web Fonts</a></li>
+        <li>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></li>
+      </ul>  
+    </div>
+
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>    
+  </body>
+</html> 
